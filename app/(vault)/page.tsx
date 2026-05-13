@@ -1,7 +1,7 @@
 import { assets } from "@/lib/db"
 import { cacheLife, cacheTag } from 'next/cache';
 
-export default function Home() {
+export default async function Home() {
     'use cache';
     cacheLife('minutes');
     cacheTag('ledger-updates');
